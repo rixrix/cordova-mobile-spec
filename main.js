@@ -20,14 +20,14 @@
 */
 
 var deviceInfo = function() {
-    document.getElementById("cordova").innerHTML = cordova.version;
-    document.getElementById("platform").innerHTML = device.platform;
-    document.getElementById("version").innerHTML = device.version;
-    document.getElementById("uuid").innerHTML = device.uuid;
-    document.getElementById("model").innerHTML = device.model;
-    document.getElementById("width").innerHTML = screen.width;
-    document.getElementById("height").innerHTML = screen.height;
-    document.getElementById("colorDepth").innerHTML = screen.colorDepth;
+    document.getElementById("cordova").textContent = cordova.version;
+    document.getElementById("platform").textContent = device.platform;
+    document.getElementById("version").textContent = device.version;
+    document.getElementById("uuid").textContent = device.uuid;
+    document.getElementById("model").textContent = device.model;
+    document.getElementById("width").textContent = screen.width;
+    document.getElementById("height").textContent = screen.height;
+    document.getElementById("colorDepth").textContent = screen.colorDepth;
 };
 
 var getLocation = function() {
